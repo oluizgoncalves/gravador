@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Simple Recorder.js demo with record, stop and pause - addpipe.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Gravador de Áudio</h1>
+    <p><small>Simples gravador de áudio</small></p>
+    <div id="textoAcima">
+    <p>Clique em Gravar para iniciar sua gravação</p>
+  </div>
+    <div id="controls">
+  	 <button id="recordButton">Gravar</button>
+  	 <button id="pauseButton" disabled>Pausar</button>
+  	 <button id="stopButton" disabled>Finalizar</button>
+    </div>
+    <div id="formats">Finalize a gravação para reproduzir e (ou) baixar o áudio</div>
+    <div id="gravacoes">
+  	<p><strong>Gravações:</strong></p></div>
+  	<ol id="recordingsList"></ol>
+
+  	<script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+  	<script src="js/app.js"></script>
+  </body>
+</html>
